@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerFirstPart">
+            <button class="menu" type="button">
+         <img src="img/menu.svg" alt="menu" class="menuImg">
+      </button>
+            <a href="index.html" class="youTube back">
+                <img class="youTubeImg" src="img/yTube.png" alt="youTube">
+            </a>
+        </div>
+
+        <div class="headerLastPart">
+            <button class="createVideo">
+         <img class="create" src="img/video.svg" alt="video">
+     </button>
+            <button class="appsButton">
+        <img class="apps" src="img/apps.svg" alt="apps">
+     </button>
+            <button class="bellButton">
+        <img class="bell" src="img/bell.svg" alt="bell">
+     </button>
+            <a href="#" class="userProfile">
+                <span class="profile">a</span>
+            </a>
+        </div>
+    </header>
+    <form class="form">
+        <h2 class="addTitle">Add your own video</h2>
+        <label class="label">
+           <h3 class="videoInputText">Video iframe</h3>
+           <input type="text" class="videoInput" placeholder="Write video iframe">
+        </label>
+        <label class="label">
+           <h3 class="imgInputText">Img link</h3>
+           <input type="url" class="imgInput" placeholder="Write img link">
+        </label>
+        <label class="label">
+         <h3 class="titleInputText">Video title</h3>
+         <input type="text" class="titleInput" placeholder="Write video title">
+      </label>
+        <button class="add" type="submit">Add video</button>
+    </form>
+    <script src="js/database.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
